@@ -6,6 +6,9 @@
 	<meta charset="utf-8">
 </head>
 <body>
+	<?php			
+	print_r($_SESSION);
+	?>
 	<div id="all">
 		<div class="commonbackground" style="height: auto;">
 			&nbsp;
@@ -15,7 +18,7 @@
 						<td>ABOUT</td></a>
 						<td>SERVICE</td></a>
 						<td>CONTACTS</td></a>
-						<td>BLOG</td></a>
+						<td onclick="location.href='personalarea.php'">PERSONAL AREA</td>
 						<td onclick="location.href='login.php'">SIGN IN</td>
 						<td onclick="location.href='registration.php'">SIGN UP</td>
 					</tr>
@@ -96,6 +99,3 @@
 	<script src='scroll.js'></script>
 </body>	
 </html>
-<?php
-
-?>

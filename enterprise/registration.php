@@ -8,6 +8,7 @@
 <body>
 	<?php
 	require('connect.php');
+	include_once("header.php");
 	if(isset($_POST['username']) and isset($_POST['password']) and $_POST['username']!='' and $_POST['password']!=''){
 		$username = $_POST['username'];
 		$email = $_POST['email'];
@@ -17,7 +18,7 @@
 		if($result){
 			$smsg = "Success!";
 			include_once('index.php');  // перенаправление на нужную страницу
-			exit();
+			exit;
 		} else {
 			$fmsg = "Error. (Maybe user already exists.)";
 		}

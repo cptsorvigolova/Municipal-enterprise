@@ -6,6 +6,10 @@
 	<meta charset="utf-8">
 </head>
 <body>
+	<?php	
+		include_once("connect.php");
+		include_once("header.php");
+	?>
 	<div class="container">
 		<form class="form-signup" method="POST">
 			<fieldset>

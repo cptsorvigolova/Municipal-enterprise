@@ -6,11 +6,9 @@
 	<meta charset="utf-8">
 </head>
 <body>	
-	<?php
+<?php
 	require('connect.php');
-	if(isset($_POST['username']) and isset($_POST['password']) and $_POST['username']!='' and $_POST['password']!=''){		
-		session_start();
-	}
+	include_once("header.php");
 	?>
 	<div class="container">
 		<form class="form-signin" method="POST" action="personalarea.php">
