@@ -10,17 +10,16 @@
 	require('connect.php');
 	if(isset($_POST['username']) and isset($_POST['password']) and $_POST['username']!='' and $_POST['password']!=''){		
 		session_start();
-		echo '<script>location.replace("personalarea.php");</script>'; exit;
 	}
 	?>
 	<div class="container">
-		<form class="form-signin" method="POST">
+		<form class="form-signin" method="POST" action="personalarea.php">
 			<fieldset>
 				<legend>Authorization</legend>
 				<input type="text" name="username" placeholder="Login"><br>
 				<input type="password" name="password" placeholder="Password"><br>
 				<button type="submit" name="submit">Sign in!</button>
-				<a href="registration.php"><button type="button" formaction="registration.php" >Registration</button></a>
+				<a href="registration.php"><button type="button" formaction="registration.php">Registration</button></a>
 			</fieldset>
 		</form>
 	</div>	
