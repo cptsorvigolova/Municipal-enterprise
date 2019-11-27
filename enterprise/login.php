@@ -1,3 +1,8 @@
+<?php
+require('connect.php');
+$header = 'Authorization';
+include_once("header.php");
+?>
 <html>
 <head>
 	<title>Authorization</title>
@@ -6,10 +11,7 @@
 	<meta charset="utf-8">
 </head>
 <body>	
-<?php
-	require('connect.php');
-	include_once("header.php");
-	?>
+
 	<div class="container">
 		<form class="form-signin" method="POST" action="personalarea.php">
 			<fieldset>
