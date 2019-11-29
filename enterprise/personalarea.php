@@ -16,6 +16,7 @@ else if(isset($_POST['username']) and isset($_POST['password'])){
 	if($count!=1){
 		echo 'failed';      	
 		echo ("<script>location.replace('login.php');</script>");
+		exit;
 	}
 }
 else{
@@ -31,13 +32,15 @@ foreach ($user as $key => $value) {
 	echo strtoupper($key).": $value<br>";			
 }
 echo "<a href='setprofileinfo.php'><button type='button' >Profile settings</button></a><br>";
+echo "<a href='onlinerequest.php'><button type='button' >New order</button></a><br>";
+echo "<a href='orders.php'><button type='button' >My orders</button></a><br>";
 echo "<a href='logout.php'><button type='button' >Log out</button></a>";
-echo "<br>SESSION ";
+/*echo "<br>SESSION ";
 print_r($_SESSION);
 echo "<br>COOKIE ";
 print_r($_COOKIE);
 echo "<br>REQUEST ";
-print_r($_REQUEST);
+print_r($_REQUEST);*/
 ?>
 </div>
 </body>	

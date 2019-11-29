@@ -17,7 +17,6 @@ if(isset($_POST['setprofileinfo'])){//$_POST['email']) and isset($_POST['passwor
 	$password = $_POST['password'];
 	$query ="UPDATE users SET username = '$username',email = '$email',password = '$password' WHERE username = '$username'";
 	$result = mysqli_query($connection, $query);
-	echo $result ;
 	if($result){
 		echo "done";
 			echo "<script>location.replace('personalarea.php');</script>";  // перенаправление на нужную страницу

@@ -12,7 +12,7 @@
 			<table class="menu unselectable" id="top">
 				<tr>
 					<td onclick="location.href='index.php'">ABOUT</td>
-					<td>SERVICE</td></a>
+					<td onclick="location.href='onlinerequest.php'">FAST ORDER</td>
 					<td>CONTACTS</td></a>
 					<td onclick="location.href='personalarea.php'">PERSONAL AREA</td>
 					<td onclick="location.href='login.php'">SIGN IN</td>

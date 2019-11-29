@@ -22,12 +22,21 @@ a:visited{
 a:hover{
 	color:rgba(0, 0, 0, 1);
 }
+table{
+	margin: auto;
+	font-family: 'Cormorant Garamond', sans-serif, bold;
+	font-size:35px;
+	border-radius: 5px;
+}
+td{	
+	text-align:center;
+}
 table.menu td{	
 	min.width:50px;
 	border-radius:5px;	
 	text-align:center;
 }
-td:hover{
+.menu td:hover{
 	background:rgba(230, 230, 230, 0.7);
 	color: rgba(0, 0, 0, 1);
 }
