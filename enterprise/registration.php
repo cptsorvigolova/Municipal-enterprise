@@ -2,7 +2,7 @@
 require('connect.php');
 $header = 'Registration';
 include_once("header.php");
-if(isset($_POST['username']) and isset($_POST['password']) and $_POST['username']!='' and $_POST['password']!=''){
+if(isset($_POST['username']) and isset($_POST['password']) and strlen($_POST['username'])>0 and strlen($_POST['password'])>=2{
 	$username = $_POST['username'];
 	$email = $_POST['email'];
 	$password = $_POST['password'];
